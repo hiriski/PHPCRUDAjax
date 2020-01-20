@@ -5,8 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
-  <script src="assets/js/jquery-1.11.3.js"></script>
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
   <title>CRUD AJAX PHP dengan jQuery</title>
+  <style>
+  .list-group-item {
+    position: relative;
+  }
+  .list-group-item p {
+    margin: 0;
+  }
+  .list-group-item button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  </style>
 </head>
 <body>
   
@@ -32,7 +45,7 @@
                   <textarea class="form-control" id="textarea" name="textarea" rows="3"></textarea>
                 </div>
                 <div class="form-group">
-                  <input type="submit" class="btn btn-primary" id="submit">
+                  <input type="submit" class="btn btn-primary" id="submit" value="Submit">
                 </div>
               </form>
             </div>

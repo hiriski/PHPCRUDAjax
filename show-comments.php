@@ -14,7 +14,11 @@ if (mysqli_num_rows($comments) > 0) { ?>
     /* loop */
     while($comment = mysqli_fetch_object($comments)) { ?>
         <ul class="list-group">
-            <li class="list-group-item mb-2"><?=$comment->content?></li>
+            <li id="comment_id-<?= $comment->id ?>" class="list-group-item mb-2">
+                <p>ID : <?= $comment->id ?></p>
+                <p><?= $comment->content ?></p>
+                <button type="button" class="delete btn btn-sm btn-danger" data-id="btn_comment_id-<?= $comment->id ?>">Delete</button>
+            </li>
         </ul>
     <?php } ?>
 
